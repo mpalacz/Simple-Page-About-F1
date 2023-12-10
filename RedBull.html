@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Palacz 53262">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="600">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Strona poświęcona zespołowi Red Bull">
+    <meta name="keywords" content="samochody, wyścigi, Formuła 1, F1, motorsport, Red Bull">
+    <title>Red Bull</title>
+    <style>
+        body {
+            background-color: rgb(0, 7, 99);
+            color: rgb(255, 211, 68);
+        }
+
+        #navbar {
+            background-color: rgb(0, 7, 99);
+        }
+
+        #navbar a {
+            color: rgb(255, 211, 68);
+        }
+
+        #navbar a.active {
+            background-color: rgb(255, 211, 68);
+            color: rgb(0, 7, 99);
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            color: rgb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="navbar">
+        <a href="https://www.redbull.com/int-en/redbullracing" id="RedBull-Logo"><img src="image/RedBullLogo.png"
+                alt="Red Bull logo" width="90" height="27"></a>
+        <a href="index.html" id="navHome">HOME</a>
+        <a href="AMG.html" id="navAmg">Mercedes AMG</a>
+        <a class="active" href="RedBull.html" id="navRB">Red Bull Racing</a>
+        <a href="McLaren.html" id="navMcL">McLaren</a>
+        <a href="Ferrari.html" id="navFer">Ferrari</a>
+        <a href="AlphaTauri.html" id="navAT">Alpha Tauri</a>
+        <a href="Alpine.html" id="navAlp">Alpine</a>
+        <a href="AstonMartin.html" id="navAM">Aston Martin</a>
+        <a href="AlfaRomeo.html" id="navAR">Alfa Romeo</a>
+        <a href="Williams.html" id="navWil">Williams</a>
+        <a href="Haas.html" id="navHaas">Haas</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU</a>
+    </div>
+    <script src="mobileMenu.js"></script>
+    <script src="hidingMenu.js"></script>
+    <br><br><br>
+    <main>
+        <h1>Red Bull Racing</h1>
+        <section>
+            <iframe width="731" height="411" src="https://www.youtube.com/embed/qJEhkNrc7jg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>10 lat temu byli niepokonani. Dzisiaj największa nadzieja fanów na pokonanie Mercedesa. Obecnie jako
+                jedyni są realnie w stanie rzucić rękawice dominującemu zespołowi.
+                W boxie, nie mają sobie równych. Jeżeli od kogoś oczekiwać najszybszej zmiany opon to właśnie od nich.
+                Czy powrócą na szczyt? Czy Red Bull doda im skrzydeł?
+            </p>
+        </section>
+        <h2>Kierowcy</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th>Max Verstappen</th>
+                <th>Sergio Perez</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="image/Verstappen.png" alt="Max Verstappen" height="305" width="305">
+                </td>
+                <td>
+                    <img src="image/Perez.png" alt="Sergio Perez" height="305" width="305">
+                </td>
+            </tr>
+            <tr>
+                <td>Syn Josa Verstappena, który od dzieciństwa dawał oznaki wielkiego
+                    talentu. Pierwszy raz startował w F1 mając 17 lat i szybko awansował
+                    do głównego zespołu. Dzisiaj jest dojrzałym kierowcą gotowym na mistrzostwo
+                    i jedynym, który w chwili obecnej może stawić czoła Hamiltonowi.
+                </td>
+                <td>Jeszcze na koniec sezonu 2020 wszyscy myśleli że nie zobaczymy Checo w F1.
+                    Nie raz pokazywał swój talent, determinację i doświadczenie. Na tyle często,
+                    że Red Bull przyjął go. Oczekiwania są wielkie, ale każdy jest świadomy jego
+                    umiejętności. Czy odczaruje "przeklęte" miejsce drugiego kierowcy?
+                </td>
+            </tr>
+        </table>
+        <h2>Galeria</h2>
+        <section>
+            <div style="text-align: center;">
+                <img class="galery" id="RedBull1" src="image/RedBull1.jpg" alt="Bolid RedBull Sergio Pereza">
+                <div id="modalRB1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalRedBull1">
+                    <div id="caption1"></div>
+                </div>
+
+                <img class="galery" id="RedBull2" src="image/RedBull2.webp" alt="Bolid RedBull w czasie testów">
+                <div id="modalRB2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalRedBull2">
+                    <div id="caption2"></div>
+                </div>
+
+                <img class="galery" id="RedBull3" src="image/RedBull3.jpg" alt="Bolid RedBull Maxa Verstappena">
+                <div id="modalRB3" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalRedBull3">
+                    <div id="caption3"></div>
+                </div>
+
+                <script src="modalImages.js"></script>
+            </div>
+        </section>
+    </main>
+    <div>
+        <img src="image/softtire.png" alt="miękka opona" id="kolo1" width="100" height="100">
+        <img src="image/mediumtire.png" alt="średnia opona" id="kolo2" width="100" height="100">
+        <img src="image/hardtire.png" alt="hard tire" id="kolo3" width="100" height="100">
+    </div>
+    <footer>Autor: Michał Palacz 53262 Źródła: <a href="https://www.formula1.com/en.html">F1</a> <a
+            href="https://racingnews365.com">RN365</a> <a href="https://www.skysports.com/f1">Sky Sports</a>
+
+        <div id="opinia">Przekaż coś miłego autorowi 😉
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div style="text-align: center;">
+                    <input class="modal-content" id="input01" placeholder="Co chcesz mi przekazać?">
+                    <br>
+                    <button id="button" style="height: 45px;width: 50px;"> Wyślij</button>
+                </div>
+            </div>
+        </div>
+        <script src="opinia.js"></script>
+    </footer>
+</body>
+
+</html>

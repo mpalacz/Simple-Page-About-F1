@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Palacz 53262">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="600">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Strona poświęcona zespołowi Aston Martin">
+    <meta name="keywords" content="samochody, wyścigi, Formuła 1, F1, motorsport, Aston Martin">
+    <title>Aston Martin</title>
+    <style>
+        body {
+            background-color: #004400;
+            color: #ff0066;
+        }
+
+        #navbar {
+            background-color: #004400;
+        }
+
+        #navbar a {
+            color: #ff0066;
+        }
+
+        #navbar a.active {
+            background-color: #ff0066;
+            color: #004400;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            color: #ff0066;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="navbar">
+        <a href="https://www.astonmartin.com/en/our-world/amf1" id="AstonMartin-Logo"><img
+                src="image/AstonMartinLogo.png" alt="Aston Martin logo" width="48" height="27"></a>
+        <a href="index.html" id="navHome">HOME</a>
+        <a href="AMG.html" id="navAmg">Mercedes AMG</a>
+        <a href="RedBull.html" id="navRB">Red Bull Racing</a>
+        <a href="McLaren.html" id="navMcL">McLaren</a>
+        <a href="Ferrari.html" id="navFer">Ferrari</a>
+        <a href="AlphaTauri.html" id="navAT">Alpha Tauri</a>
+        <a href="Alpine.html" id="navAlp">Alpine</a>
+        <a class="active" href="AstonMartin.html" id="navAM">Aston Martin</a>
+        <a href="AlfaRomeo.html" id="navAR">Alfa Romeo</a>
+        <a href="Williams.html" id="navWil">Williams</a>
+        <a href="Haas.html" id="navHaas">Haas</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU</a>
+    </div>
+    <script src="mobileMenu.js"></script>
+    <script src="hidingMenu.js"></script>
+    <br><br><br>
+    <main>
+        <h1>Aston Martin Cognizant F1 Team</h1>
+        <section>
+            <iframe width="731" height="411" src="https://www.youtube.com/embed/vtOxMohehy8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Powrót marki jako zespół po dekadach przerwy. W F1 znowu jest zielono. Często zmieniający nazwy w
+                ostatnich latach zespół Force India/Racing Point chyba już na dłuższy czas zmienił malowanie.
+                Spełnienie marzeń Lawrenca Strolla. Po mocnym roku 2020 oczekiwania są wysokie. Bolid nadal wywołuje
+                kontrowersje, gdyż według wielu zbyt bardzo przypomina dominującego Mercedesa.
+            </p>
+        </section>
+        <h2>Kierowcy</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th>Sebastian Vettel</th>
+                <th>Lance Stroll</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="image/Vettel.png" alt="Sebastian Vettel" height="305" width="305">
+                </td>
+                <td>
+                    <img src="image/Stroll.png" alt="Lance Stroll" height="305" width="202">
+                </td>
+            </tr>
+            <tr>
+                <td>Czterokrotny mistrz świata i jeden z najbardziej lubianych kierowców,
+                    zamienił czerwień na zieleń. Po latach w Ferrari gdzie stopniowo jego
+                    forma spadała, stoi przed szansą by pokazać, że nadal ma umiejętności
+                    na poziomie mistrza.
+                </td>
+                <td>Ludzie żartują że ojciec mu kupił zespół i najlepszy samochód. Trochę
+                    prawdy w tym jest, ale Lance nie raz pokazał że jest szybki. Był 3 razy
+                    na podium i raz startowa z pole position. Możliwe że jeszcze nas zaskoczy.
+                </td>
+            </tr>
+        </table>
+        <h2>Galeria</h2>
+        <section>
+            <div style="text-align: center;">
+                <img class="galery" id="AstonMartin1" src="image/AstonMartin1.jpg" alt="Prezentacja bolidu AstonMartin">
+                <div id="modalAM1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalAstonMartin1">
+                    <div id="caption1"></div>
+                </div>
+
+                <img class="galery" id="AstonMartin2" src="image/AstonMartin2.jpg" alt="Bolid AstonMartin Sebasiatna Vettela">
+                <div id="modalAM2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalAstonMartin2">
+                    <div id="caption2"></div>
+                </div>
+
+                <img class="galery" id="AstonMartin3" src="image/AstonMartin3.jpg" alt="Bolid AstonMartin Lanca Strolla">
+                <div id="modalAM3" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalAstonMartin3">
+                    <div id="caption3"></div>
+                </div>
+
+                <script src="modalImages.js"></script>
+            </div>
+        </section>
+    </main>
+    <div>
+        <img id="galery" src="image/softtire.png" alt="miękka opona" id="kolo1" width="100" height="100">
+        <img id="galery" src="image/mediumtire.png" alt="średnia opona" id="kolo2" width="100" height="100">
+        <img id="galery" src="image/hardtire.png" alt="hard tire" id="kolo3" width="100" height="100">
+    </div>
+    <footer>Autor: Michał Palacz 53262 Źródła: <a href="https://www.formula1.com/en.html">F1</a> <a
+            href="https://racingnews365.com">RN365</a> <a href="https://www.skysports.com/f1">Sky Sports</a>
+
+        <div id="opinia">Przekaż coś miłego autorowi 😉
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div style="text-align: center;">
+                    <input class="modal-content" id="input01" placeholder="Co chcesz mi przekazać?">
+                    <br>
+                    <button id="button" style="height: 45px;width: 50px;"> Wyślij</button>
+                </div>
+            </div>
+        </div>
+        <script src="opinia.js"></script>
+    </footer>
+</body>
+
+</html>

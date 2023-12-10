@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michał Palacz 53262">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="600">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Strona poświęcona zespołowi Mercedes AMG">
+    <meta name="keywords" content="samochody, wyścigi, Formuła 1, F1, motorsport, Mercedes, AMG">
+    <title>Mercedes</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00fcda;
+        }
+
+        #navbar {
+            background-color: black;
+        }
+
+        #navbar a {
+            color: rgb(0, 252, 218);
+        }
+
+        #navbar a.active {
+            background-color: rgb(0, 252, 218);
+            color: black;
+        }
+        
+        table,
+        tr,
+        td,
+        th {
+            color: rgb(0, 252, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="navbar">
+        <a href="https://www.mercedesamgf1.com/en/" id="Mercedes-Logo"><img src="image/MercedesLogo.png"
+                alt="Mercedes AMG logo" width="100" height="27"></a>
+        <a href="index.html" id="navHome">HOME</a>
+        <a class="active" href="AMG.html" id="navAmg">Mercedes AMG</a>
+        <a href="RedBull.html" id="navRB">Red Bull Racing</a>
+        <a href="McLaren.html" id="navMcL">McLaren</a>
+        <a href="Ferrari.html" id="navFer">Ferrari</a>
+        <a href="AlphaTauri.html" id="navAT">Alpha Tauri</a>
+        <a href="Alpine.html" id="navAlp">Alpine</a>
+        <a href="AstonMartin.html" id="navAM">Aston Martin</a>
+        <a href="AlfaRomeo.html" id="navAR">Alfa Romeo</a>
+        <a href="Williams.html" id="navWil">Williams</a>
+        <a href="Haas.html" id="navHaas">Haas</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU</a>
+    </div>
+    <script src="mobileMenu.js"></script>
+    <script src="hidingMenu.js"></script>
+    <br><br><br>
+    <main>
+        <h1>Mercedes AMG Petronas Formula 1 Team</h1>
+        <section>
+            <iframe width="731" height="411" src="https://www.youtube.com/embed/6OQDWm-NQeI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Mercedes jest dominatorem ery hybrydowej. Od 2014 co roku są mistrzami konstruktorów. Widok ich kierwców
+                na podium stał się normą, przez co wielu fanów ma już dosyć ich dominacji. Nie dość że często
+                wygrywają, to w dodadtku z dużą przewagą. Ich auta nie mają sobie równych w tym sporcie, są po prostu
+                perfekcyjne. Ich wpadki, zawsze dają kibicom masę emocji, bo takie sytuacje oznaczają że wyścig
+                został wywrócony do góry nogami.
+            </p>
+        </section>
+        <h2>Kierowcy</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th>Lewis Hamilton</th>
+                <th>Valtteri Bottas</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="image/Hamilton.png" alt="Lewis Hamilton" height="305" width="305">
+                </td>
+                <td>
+                    <img src="image/Bottas.png" alt="Valtteri Bottas" height="305" width="305">
+                </td>
+            </tr>
+            <tr>
+                <td>Bije rekord za rekordem. W mistrzostwach świata zrównał się z Schumacherem.
+                    Jest najbardziej dominującym kierowcą w historii F1, ale czy najlepszym?
+                    Wielu uważa że osiągnął to głównie dzięki bolidowi. Wiele osób nie kibicuje
+                    mu, gdyż wielu fanów sportu uważa że to ona sprawia że wyścigi są nudne.
+                </td>
+                <td>Od kąd jest w Mercedesie odgraża się że pokona Hamiltona i zostanie
+                    mistrzem świata. Jednakże większość jest świadoma że tak się nie stanie
+                    gdyż zespół na to nie pozwoli. Może uda się mu w końcu dotrzymać słowa,
+                    tylko ile mu na to czasu zostało?
+                </td>
+            </tr>
+        </table>
+        <h2>Galeria</h2>
+        <section>
+            <div style="text-align: center;">
+                <img class="galery" id="Mercedes1" src="image/Mercedes1.jpg" alt="Bolid Mercedesa na torze">
+                <div id="modalAMG1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalMercedes1">
+                    <div id="caption1"></div>
+                </div>
+
+                <img class="galery" id="Mercedes2" src="image/Mercedes2.jpg" alt="Prezentacja bolidu Mercedesa">
+                <div id="modalAMG2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalMercedes2">
+                    <div id="caption2"></div>
+                </div>
+
+                <img class="galery" id="Mercedes3" src="image/Mercedes3.jpg" alt="Bolid Mercedesa z kierowcami">
+                <div id="modalAMG3" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalMercedes3">
+                    <div id="caption3"></div>
+                </div>
+
+                <script src="modalImages.js"></script>
+            </div>
+        </section>
+    </main>
+    <div>
+        <img src="image/softtire.png" alt="miękka opona" id="kolo1" width="100" height="100">
+        <img src="image/mediumtire.png" alt="średnia opona" id="kolo2" width="100" height="100">
+        <img src="image/hardtire.png" alt="hard tire" id="kolo3" width="100" height="100">
+    </div>
+    <footer>Autor: Michał Palacz 53262 Źródła: <a href="https://www.formula1.com/en.html">F1</a> <a
+            href="https://racingnews365.com">RN365</a> <a href="https://www.skysports.com/f1">Sky Sports</a>
+
+        <div id="opinia">Przekaż coś miłego autorowi 😉
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div style="text-align: center;">
+                    <input class="modal-content" id="input01" placeholder="Co chcesz mi przekazać?">
+                    <br>
+                    <button id="button" style="height: 45px;width: 50px;"> Wyślij</button>
+                </div>
+            </div>
+        </div>
+        <script src="opinia.js"></script>
+    </footer>
+</body>
+
+</html>

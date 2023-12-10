@@ -1,0 +1,330 @@
+html{
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    margin: 100px;
+    text-align: center;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+li{
+    text-align: left;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-type: disc;
+}
+div{
+    text-align: left;
+}
+table, tr, td, th{
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px dashed;
+}
+#caption1,#caption2,#caption3{
+    text-align: center;
+}
+.galery{
+    border: 3px dotted;
+    border-radius: 15px;
+    height: 326px;
+}
+.galery:hover {opacity: 0.9;}
+#navHome:hover{
+    background-color: white;
+    color: red;
+}
+#navHome:active{
+    background-color: red;
+    color: white;
+}
+#navAmg:hover{
+    background-color: black;
+    color: rgb(0, 252, 218);
+}
+#navAmg:active{
+    background-color:rgb(0, 252, 218);
+    color: black;
+}
+#navRB:hover{
+    background-color: rgb(0, 7, 99);
+    color: rgb(255, 211, 68);
+}
+#navRB:active{
+    background-color:rgb(255, 211, 68);
+    color: rgb(0, 7, 99);
+}#navMcL:hover{
+    background-color: orange;
+    color: rgb(0, 68, 255);
+}
+#navMcL:active{
+    background-color: rgb(0, 68, 255);
+    color: orange;
+}#navFer:hover{
+    background-color: red;
+    color: yellow;
+}
+#navFer:active{
+    background-color:yellow;
+    color: red;
+}#navAT:hover{
+    background-color:  #C8C8C8;
+    color: #1f3d7a;
+}
+#navAT:active{
+    background-color:#1f3d7a;
+    color:  #C8C8C8;
+}#navAlp:hover{
+    background-color: #0066ff;
+    color: #ff1a1a;
+}
+#navAlp:active{
+    background-color:#ff1a1a;
+    color: #0066ff;
+}#navAM:hover{
+    background-color: #004400;
+    color: #ff0066;
+}
+#navAM:active{
+    background-color:#ff0066;
+    color: #004400;
+}#navAR:hover{
+    background-color: white;
+    color: #960000;
+}
+#navAR:active{
+    background-color:#960000;
+    color: white;
+}#navWil:hover{
+    background-color: #000080;
+    color: white;
+}
+#navWil:active{
+    background-color:white;
+    color: #000080;
+}
+#navHaas:hover{
+    background-color: gray;
+    color: red;
+}
+#navHaas:active{
+    background-color:red;
+    color: grey;
+}
+@keyframes toczenie1{
+    0%{transform: rotate(0deg);left: 0px;top: 0px;}
+    50%{transform: rotate(360deg);left: calc(100vw - 328px);top: 0px;}
+    100%{transform: rotate(-360deg);left: 0px;top: 0px;}
+}
+@keyframes toczenie2{
+    0%{transform: rotate(0deg);left: 0px;top: 0px;}
+    50%{transform: rotate(360deg);left: calc(100vw - 328px);top: 0px;}
+    100%{transform: rotate(-360deg);left: 0px;top: 0px;}
+}
+@keyframes toczenie3{
+    0%{transform: rotate(0deg);left: 0px;top: 0px;}
+    50%{transform: rotate(360deg);left: calc(100vw - 328px);top: 0px;}
+    100%{transform: rotate(-360deg);left: 0px;top: 0px;}
+}
+#kolo1{
+    position:  relative;
+    animation-name: toczenie1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#kolo2{
+    position:  relative;
+    animation-name: toczenie2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#kolo3{
+    position:  relative;
+    animation-name: toczenie3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 600px) {
+    html {
+       font-size: 12px;
+    }
+    img {
+        max-height: 200px;
+    }
+    div.resp {
+        font-size: 1.0rem;
+    }
+    body{
+        margin: 0px
+    }
+    @keyframes toczenie1{
+        0%{transform: rotate(0deg);}
+        50%{transform: rotate(360deg);}
+        100%{transform: rotate(-360deg);}
+    }
+    @keyframes toczenie2{
+        0%{transform: rotate(0deg);}
+        50%{transform: rotate(360deg);}
+        100%{transform: rotate(-360deg);}
+    }
+    @keyframes toczenie3{
+        0%{transform: rotate(0deg);}
+        50%{transform: rotate(360deg);}
+        100%{transform: rotate(-360deg);}
+    }
+
+    div{
+        text-align: center;
+    }
+    
+    #kolo1{
+        height: 75px;
+        width: 75px;
+    }
+    
+    #kolo2{
+        height: 75px;
+        width: 75px;
+    }
+    
+    #kolo3{
+        height: 75px;
+        width: 75px;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) { 
+    div.resp {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.resp {
+        font-size: 1.0rem;
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
